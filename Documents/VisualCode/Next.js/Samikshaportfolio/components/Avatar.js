@@ -8,9 +8,9 @@ const Avatar = () => {
     <Image
     src={'/Avatar.png'}
     width={737}
-    height={700}
+    height={620}
     alt=""
-    className="translate-z-0 w-full h-[660px]"/>
+    className="translate-z-0 w-full h-[550px]"/>
   </div>
 );
 };

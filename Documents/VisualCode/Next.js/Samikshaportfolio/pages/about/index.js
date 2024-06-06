@@ -134,7 +134,7 @@ const About = () => {
         initial='hidden'
         animate='show'
         exit='hidden'
-        className="hidden xl:flex absolute bottom-0 -left-[370px]">
+        className="hidden xl:flex absolute bottom-0 -left-[322px]">
         <Avatar />
       </motion.div>
 
@@ -155,7 +155,7 @@ const About = () => {
             initial='hidden'
             animate='show'
             exit='hidden'
-            className="max-w-[500px] mx-auto xl:mx-0  xl:mb-4 px-2 xl:px-0">
+            className="max-w-[500px] text-sm mx-auto xl:mx-0  xl:mb-4 px-2 xl:px-0">
           Hello! I'm Samiksha Gupta, a final-year student and enthusiastic web developer, 
           designer, and coder. Specializing in frontend development, I have a keen eye for
            design and a passion for creating seamless, interactive user experiences. My journey began 
@@ -166,7 +166,7 @@ const About = () => {
             initial='hidden'
             animate='show'
             exit='hidden'
-            className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0">
+            className="max-w-[500px] text-sm mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0">
           Skilled in coding and problem-solving, I turn ideas into user-friendly solutions. With a
            focus on clean, adaptable code, every project I tackle is robust and developer-friendly.</motion.p>
           {/* counter */}
@@ -243,7 +243,7 @@ const About = () => {
                   {/* title */}
                   <div className="font-light text-white mb-2 md:mb-0">{item.title}</div>
                   <div className="hidden md:flex">-</div>
-                  <div>{item.stage}</div>
+                  <div className="text-sm">{item.stage}</div>
                   <div className="flex gap-x-4">
                     {/* icons */}
                     {item.icons?.map((icon, itemIndex) => {
