@@ -1,7 +1,7 @@
 
 
 import { motion } from 'framer-motion';
-
+import Image from 'next/image';
 const Card = ({ title,subheading, description, imgSrc, githubLink, learnMoreLink, index }) => {
     const isEven = index % 2 === 0;
   
@@ -20,12 +20,14 @@ const Card = ({ title,subheading, description, imgSrc, githubLink, learnMoreLink
           <div className="absolute inset-0 z-10 h-full w-full  opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
           <div className="relative z-20 grid grid-cols-2 h-full">
             <div className={`relative overflow-hidden ${isEven ? 'order-1' : 'order-2'}`}>
-              <img
-                src={imgSrc}
-                alt="Image"
-                className="h-full w-full object-cover object-center transition-transform duration-300 group-hover:scale-110"
-                style={{ aspectRatio: '300 / 300', objectFit: 'cover' }}
-              />
+            <Image
+              src={imgSrc}
+              alt="Image"
+              layout="fill"
+              objectFit="cover"
+              objectPosition="center"
+              className="transition-transform duration-300 group-hover:scale-110"
+            />
             </div>
             <div className={`flex flex-col  justify-center gap-4 p-6 ${isEven ? 'order-2' : 'order-1'}`}>
               <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-50">{title}</h1>
