@@ -362,10 +362,10 @@ const aboutData = [
         title: 'Web Developer @Cognifyz',
         stage: '11/2023',
       },
-      {
-        title: 'AWS Academy Intern @AICTE',
-        stage: '04/2024',
-      },
+      // {
+      //   title: 'AWS Academy Intern @AICTE',
+      //   stage: '04/2024',
+      // },
       {
         title: 'Marketing Contributor @Blockchain Club',
         stage: '2023 | Present',

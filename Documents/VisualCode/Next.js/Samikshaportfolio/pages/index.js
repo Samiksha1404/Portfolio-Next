@@ -13,11 +13,11 @@ import { motion } from 'framer-motion';
 // variants
 import { fadeIn } from '../variants';
 
-// resume function
-function handleResumeClick() {
-  const resumePDF = '/Samiksha-resume.pdf';
-  window.open(resumePDF, '_blank');
-}
+// // resume function
+// function handleResumeClick() {
+//   const resumePDF = '/Samiksha-resume.pdf';
+//   window.open(resumePDF, '_blank');
+// }
 
 const Home = () => {
   return (
@@ -59,7 +59,7 @@ const Home = () => {
             <ProjectsBtn />
           </motion.div>
 
-            <button
+            {/* <button
               className="btn ml-16 rounded-full border border-white/50 max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group"
               type="button"
               onClick={handleResumeClick}
@@ -72,7 +72,7 @@ const Home = () => {
               <BsArrowRight
                 className="-translate-y-[120%] opacity-0 group-hover:flex group-hover:-translate-y-0 group-hover:opacity-100 transition-all duration-300 absolute text-[22px]"
               />
-            </button>
+            </button> */}
             </div>
 
         </div>
