@@ -13,10 +13,10 @@ function MyApp({ Component, pageProps }) {
   const router = useRouter();
   return (
     <>
-    <Head>
-        <title>Samiksha Gupta</title>
-        <link rel="icon" href="\sglogo.png" />
-      </Head>
+    // <Head>
+    //     <title>Samiksha Gupta</title>
+    //     <link rel="icon" href="\sglogo.png" />
+    //   </Head>
     <Layout>
       <AnimatePresence mode='wait'>
         <motion.div key={router.route} className='h-full'>
